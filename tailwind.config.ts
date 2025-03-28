@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    darkMode: ["class"],
+  darkMode: ["class"],
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -8,7 +8,7 @@ module.exports = {
   ],
   prefix: "",
   theme: {
-    Container: {
+    container: {
       center: true,
       padding: "2rem",
       screens: {
@@ -16,19 +16,21 @@ module.exports = {
         md: "100%",
         lg: "100%",
         xl: "100%",
-        
       },
-    fontFamily: {
-      primary: "var(--font-jetbrainsMono)",      
     },
+   
     extend: {
-    
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+      fontFamily: {
+        primary: "var(--font-jetbrainsMono)",
+      },
+      colors: {
+        primary: "#1c1c22",
+        accent: {
+          DEFAULT: "#00ff99",
+          hover: "#00e187",
         },
       },
+      keyframes: {},
     },
   },
   plugins: [],

@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="text-white">
       <body
         className={`${jetBrainsMono.variable} antialiased`}
       >

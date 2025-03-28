@@ -3,6 +3,9 @@
 
 @layer base {
   body { 
-    font-family: var(--font-primary);
+    background-color: #1c1c22;
+    
+    font-family: var(--font-jetbrainsMono); /* Use the custom font variable */
   }
 }
+
