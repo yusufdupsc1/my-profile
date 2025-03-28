@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "../components/Header"; // Adjust the path to the actual location of the Header component
 
 
 const jetBrainsMono = JetBrains_Mono({
@@ -22,10 +23,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="text-white">
-      <body
-        className={`${jetBrainsMono.variable} antialiased`}
-      >
+    <html lang="en" className="text-white loading loose">
+      <body>
+        <Header />
         {children}
       </body>
     </html>
